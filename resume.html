@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume Builder</title>
+  <link rel="stylesheet" href="resume.css">
+</head>
+<body>
+  <header>
+    <h1>Resume Builder</h1>
+  </header>
+
+  <section id="personal-info">
+    <h2>Personal Information</h2>
+    <form id="personal-info-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+    
+
+      <button type="submit">Save</button>
+    </form>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <form id="education-form">
+      <div class="input-group">
+        <label for="education-institution">Institution:</label>
+        <input type="text" id="education-institution" name="education-institution" required>
+      </div>
+      <div class="input-group">
+        <label for="education-degree">Degree:</label>
+        <input type="text" id="education-degree" name="education-degree" required>
+      </div>
+      <div class="input-group">
+        <label for="education-date">Date:</label>
+        <input type="text" id="education-date" name="education-date" required>
+      </div>
+      <button type="submit">Save</button>
+    </form>
+    <div id="education-list">
+    
+    </div>
+  </section>
+  
+  <section id="experience">
+    <h2>Experience</h2>
+    <form id="experience-form">
+      <div class="input-group">
+        <label for="experience-company">Company:</label>
+        <input type="text" id="experience-company" name="experience-company" required>
+      </div>
+      <div class="input-group">
+        <label for="experience-position">Position:</label>
+        <input type="text" id="experience-position" name="experience-position" required>
+      </div>
+      <div class="input-group">
+        <label for="experience-date">Date:</label>
+        <input type="text" id="experience-date" name="experience-date" required>
+      </div>
+      <button type="submit">Save</button>
+    </form>
+    <div id="experience-list">
+     
+    </div>
+  </section>
+  
+  <section id="skills">
+    <h2>Skills</h2>
+    <form id="skills-form">
+      <div class="input-group">
+        <label for="skills-input">Skills:</label>
+        <input type="text" id="skills-input" name="skills-input" required>
+      </div>
+      <button type="submit">Save</button>
+    </form>
+    <div id="skills-list">
+    
+    </div>
+  </section>
+  
+
+  <section id="preview">
+    <h2>Preview</h2>
+    <div id="resume-preview">
+    
+    </div>
+  </section>
+
+  <button id="generate-btn">Generate Resume</button>
+
+  <script src="resume.js"></script>
+</body>
+</html>
